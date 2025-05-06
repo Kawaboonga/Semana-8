@@ -11,6 +11,8 @@ public interface FacturaServicio {
     Factura updateFactura(Long id, Factura factura);
     void deleteFactura(Long id);
     boolean existsById(Long id);  
+    List<Factura> getFacturasByFecha(String fecha); 
+    
+    // Método para obtener las facturas pagadas
+    List<Factura> getFacturasPagadas();
 }
-
-

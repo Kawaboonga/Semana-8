@@ -1,52 +1,64 @@
 package com.example.veterinaria.service;
 
+
 import com.example.veterinaria.model.Factura;
 import com.example.veterinaria.repository.FacturaRepositorio;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class FacturaServicioImp implements FacturaServicio {
 
-    @Autowired
-    private FacturaRepositorio facturaRepositorio;
+    private final FacturaRepositorio facturaRepository;
 
     @Override
     public List<Factura> getAllFacturas() {
-        return facturaRepositorio.findAll();
+        return facturaRepository.findAll();
     }
 
     @Override
     public Optional<Factura> getFacturaById(Long id) {
-        return facturaRepositorio.findById(id);
+        return facturaRepository.findById(id);
     }
 
     @Override
     public Factura createFactura(Factura factura) {
-        return facturaRepositorio.save(factura);
+        return facturaRepository.save(factura);
     }
 
     @Override
     public Factura updateFactura(Long id, Factura factura) {
-        if(facturaRepositorio.existsById(id)) {  // Verifica si la factura existe
+        if (facturaRepository.existsById(id)) {
             factura.setId(id);
-            return facturaRepositorio.save(factura);
+            return facturaRepository.save(factura);
         }
-        return null;
+        return null;  // Or throw an exception if preferred
     }
 
     @Override
     public void deleteFactura(Long id) {
-        if(facturaRepositorio.existsById(id)) {
-            facturaRepositorio.deleteById(id);
-        }
+        facturaRepository.deleteById(id);
     }
 
     @Override
     public boolean existsById(Long id) {
-        return facturaRepositorio.existsById(id);  // Llama  método repo verificar si la factura existe
+        return facturaRepository.existsById(id);
     }
+
+    @Override
+    public List<Factura> getFacturasByFecha(String fechaStr) {
+    LocalDate fecha = LocalDate.parse(fechaStr);  // convierte String a LocalDate
+    return facturaRepository.findByFecha(fecha);
+    }
+
+     // Implementación del método getFacturasPagadas
+     @Override
+     public List<Factura> getFacturasPagadas() {
+         return facturaRepository.findByPagada(true);  // Filtra las facturas que están marcadas como pagadas
+     }
 }

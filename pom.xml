@@ -40,6 +40,13 @@
             <version>19.3.0.0</version>
         </dependency>
  
+        <!-- Oracle PKI for Wallet (if needed) -->
+        <dependency>
+            <groupId>com.oracle.database.security</groupId>
+            <artifactId>oraclepki</artifactId>
+            <version>19.3.0.0</version>
+        </dependency>
+
         <!-- Jakarta Validation API -->
         <dependency>
             <groupId>jakarta.validation</groupId>
@@ -57,7 +64,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>6.2.0.Final</version> 
+            <version>6.2.0.Final</version>
         </dependency>
  
         <!-- Lombok (opcional) -->
@@ -82,13 +89,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <!-- JAR -->
-
-		<dependency>
-			<groupId>com.oracle.database.security</groupId>
-			<artifactId>oraclepki</artifactId>
-			<version>19.3.0.0</version>
-		</dependency>
+ 
     <build>
         <plugins>
             <plugin>

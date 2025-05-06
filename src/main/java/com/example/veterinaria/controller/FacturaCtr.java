@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/facturas")
+@RequestMapping("/api/facturas")  // Ruta base para el CRUD de facturas
 @RequiredArgsConstructor
 public class FacturaCtr {
 
@@ -35,5 +35,12 @@ public class FacturaCtr {
         } else {
             return ResponseEntity.notFound().build();  // 404 Not Found si no se encuentra la factura
         }
+    }
+
+    // Crear una nueva factura
+    @PostMapping
+    public ResponseEntity<Factura> crearFactura(@RequestBody Factura factura) {
+        Factura nuevaFactura = facturaServicio.createFactura(factura);
+        return ResponseEntity.ok(nuevaFactura);  // 200 OK con la factura creada
     }
 }

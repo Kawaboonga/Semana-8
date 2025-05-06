@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import java.util.List;
+import java.util.Date;
 
 @Entity
 public class Factura {
@@ -39,6 +40,10 @@ public class Factura {
     private double total;
 
     private boolean pagada;
+
+    // Fecha de la factura
+    @Temporal(TemporalType.DATE)
+    private Date fecha;
 
     // Calcula el total basado en los servicios
     @PrePersist
@@ -118,5 +123,13 @@ public class Factura {
 
     public void setPagada(boolean pagada) {
         this.pagada = pagada;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 }

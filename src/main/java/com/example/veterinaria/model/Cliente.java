@@ -26,6 +26,10 @@ public class Cliente {
     @Pattern(regexp = "^\\+?([0-9]{1,4})?([0-9]{9})$", message = "El teléfono debe tener un formato válido.")
     private String telefono;
 
+    // Constructor vacío 
+    public Cliente() {
+    }
+
     // Constructor con parámetros
     public Cliente(Long id, String nombre, String rut, String telefono) {
         this.id = id;
