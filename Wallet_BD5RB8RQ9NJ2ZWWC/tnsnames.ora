@@ -1,0 +1,747 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Email Subject</title>
+    <meta name="referrer" content="never">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">
+    <meta type="xrm/designer/setting" name="layout-editable" value="marketing-designer-layout-editable">
+    <meta type="xrm/designer/setting" name="layout-max-width" value="600px" datatype="text" label="Layout max width">
+    <meta type="xrm/designer/setting" name="font-family" value="Arial, Verdana, sans-serif" datatype="font" label="Font Family">
+    <meta type="xrm/designer/setting" name="body-text-size" value="14px" datatype="text" label="Body Font Size">
+    <meta type="xrm/designer/setting" name="body-text-color" value="#000" datatype="color" label="Body Text Color">
+    <meta type="xrm/designer/setting" name="outer-background" value="#FFFFF" datatype="color" label="Email Background">
+    <style>
+        body {
+            font-family:
+                /* @font-family */
+                Verdana,
+                /* @font-family */
+                Arial,
+                /* @font-family */
+                sans-serif
+                /* @font-family */
+            ;
+            font-size:
+                /* @body-text-size */
+                14px
+                /* @body-text-size */
+            ;
+            color:
+                /* @body-text-color */
+                #000
+                /* @body-text-color */
+            ;
+            background-color: #E7E7E7;
+        }
+
+        [data-layout="true"] {
+            margin: 0 auto;
+            max-width:
+                /* @layout-max-width */
+                600px
+                /* @layout-max-width */
+            ;
+        }
+
+        p {
+            margin: 0px;
+            padding: 0px;
+			color:#444444!important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .columnContainer {
+                flex: 1 1 0%;
+                width: 100% !important;
+                padding: 10px 0px !important;
+            }
+
+            .no-wrap-section .columnContainer {
+                width: auto !important;
+                display: table-cell !important;
+            }
+
+            .no-wrap-section .no-wrap-section-wrapper {
+                width: auto !important;
+                display: table !important;
+                margin: auto;
+            }
+
+            .hide-on-mobile-class {
+                display: none !important;
+            }
+
+            .hide-on-desktop-class {
+                display: block !important;
+            }
+
+            .hide-on-desktop-class.hide-on-mobile-class {
+                display: none !important;
+            }
+        }
+
+        a.buttonClass {
+            outline: none;
+            text-decoration: none;
+        }
+
+        ol {
+            list-style-type: circle;
+            color: #807e7c;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+
+
+        table {
+            border-spacing: 0;
+            table-layout: fixed;
+            margin: 0 auto;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            width: auto;
+            max-width: auto;
+            height: auto;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        u+#body a {
+            color: inherit;
+            font-family: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        .appleLinks a {
+            color: #c2c2c2 !important;
+            text-decoration: none !important;
+        }
+
+        span.preheader {
+            display: none !important;
+        }
+
+        /*------ Media Width 599px ------ */
+        /*Responsive*/
+        @media only screen and (max-width: 699px) {
+
+            table.hideMobile,
+            tr.hideMobile,
+            td.hideMobile,
+            br.hideMobile {
+                display: none !important;
+            }
+
+            table.row,
+            div.row {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            table.centerFloat,
+            td.centerFloat,
+            img.centerFloat {
+                float: none !important;
+                margin: 0 auto !important;
+            }
+
+            table.halfRow,
+            div.halfRow {
+                width: 50% !;
+                max-width: 50% !important;
+            }
+
+            td.imgResponsive img {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin: auto;
+            }
+
+            td.menuLink a {
+                display: block;
+                border-top: 1px solid;
+                padding-top: 20px;
+            }
+
+            td.centerText {
+                text-align: center !important;
+            }
+
+            td.containerPadding {
+                width: 100% !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            td.spaceControl {
+                height: 15px !important;
+                font-size: 15px !important;
+                line-height: 15px !important;
+            }
+        }
+
+        table {
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #333333;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        .webkit {
+            max-width: 600px;
+        }
+
+        /* Windows Phone Viewport Fix */
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            background-color: #FFFFFF !important;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .inner {
+            padding: 10px;
+        }
+
+        p {
+            Margin: 0;
+        }
+
+        a {
+            color: #2e95ff;
+        }
+
+        .h1 {
+            font-size: 21px;
+            font-weight: bold;
+            Margin-bottom: 18px;
+        }
+
+        .h2 {
+            font-size: 18px;
+            font-weight: bold;
+            Margin-bottom: 12px;
+        }
+
+        /* One column layout */
+        .one-column .contents {
+            text-align: left;
+        }
+
+        .one-column p {
+            font-size: 14px;
+            Margin-bottom: 10px;
+        }
+
+        /*Two column layout*/
+        .two-column {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .two-column .column {
+            width: 100%;
+            max-width: 260px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .contents {
+            color: #343434;
+        }
+
+        .two-column .contents {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .two-column img {
+            width: 100%;
+            height: auto;
+        }
+
+        .two-column .text {
+            padding-top: 10px;
+        }
+
+
+
+        .hide-on-desktop-class {
+            display: none;
+        }
+    </style>
+
+
+
+    <meta name="html-editor">
+</head>
+
+<body><div data-layout="true" style="margin: auto; max-width: 600px;" data-layout-version="v2">
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th role="presentation">
+                            <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer" data-container-width="100" style="vertical-align: top; min-width: 5px; width: 600px; height: 0px;" id="containerfe1031c03bc541683560569764" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner" style="min-width: 5px; padding: 10px; vertical-align: baseline;  word-wrap: break-word; word-break: break-word;  word-wrap: break-word; word-break: break-word; background-color: rgb(230, 230, 230); font-weight: normal;" role="presentation">
+                                                            <div data-editorblocktype="Text" style="text-align: center;">
+                                                                <p style="text-align: center;">
+                                                                    <span style="font-size:11px;"><span style="color:#666666; :; font-style:normal; font-weight:normal; letter-spacing:normal; text-indent:0px; text-transform:none; white-space:normal; word-spacing:0px; text-decoration-style:initial; font-family:&quot;Trebuchet MS&quot;, Verdana, sans-serif; float:none; display:inline !important">Si no lees correctamente este mensaje,</span><span style="font-style: normal; font-weight: normal; letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; text-decoration-style: initial; color: rgb(34, 34, 34); font-family: &quot;Trebuchet MS&quot;, Verdana, sans-serif; float: none; display: inline !important;">&nbsp;</span>​<a class="fide-browser-view" href="{{Message.ViewAsWebpageURL}}" style="font-style: normal; font-weight: normal; letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;  line-height: 20px; font-family: &quot;Trebuchet MS&quot;, Verdana, sans-serif; margin-bottom: 15px;">haz
+                                                                        clic aquí.</a>​<br>​</span>
+                                                                </p>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section" style="background-color: rgb(255, 255, 255);">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th style="background-color: rgb(255, 255, 255);" role="presentation">
+                            <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer" data-container-width="100" style="vertical-align:top; min-width: 5px; width: 600px; ; height: 0px;" id="container22d8127a4b4e91683560569764" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner" style="min-width: 5px; vertical-align: baseline;  word-wrap: break-word; word-break: break-word; font-weight: normal;" role="presentation">
+                                                            <div data-editorblocktype="Image" style="padding: 0px; margin: 0px;">
+                                                                <div align="Center" class="imageWrapper" width="100%" data-image-file-id="78285f44-981f-f011-998a-0022483601fe">
+                                                                    <img src="https://assets-sam.mkt.dynamics.com/bd1f2d8e-014c-4485-b5d2-b7ab4a4ef390/digitalassets/images/78285f44-981f-f011-998a-0022483601fe?ts=638809367393407737" style="max-height: 100%; max-width: 100%; box-sizing: border-box; margin: 0px; position: relative; display: block; top: 0px; left: 0px; border-radius: 0px;">
+                                                                </div>
+
+
+
+
+
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section" style="background-color: rgb(255, 255, 255);">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th style="padding-top: 10px; padding-right: 20px; padding-left: 20px; background-color: rgb(255, 255, 255);" role="presentation">
+                            <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer" data-container-width="100" style="vertical-align:top; min-width: 5px; width: 560px; ; height: 0px;" id="container381c3fc9a8e431683560569764" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner" style="min-width: 5px; padding: 31px 35px 20px; vertical-align: baseline;  word-wrap: break-word; word-break: break-word; font-weight: normal;" role="presentation">
+                                                            <div data-editorblocktype="Text">
+                                                                <p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 18.4px; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><b>¡Conviértete en Embajador(a) del Bienestar y la Salud Mental!</b><o:p></o:p></p>
+                                                            </div>
+                                                            <div data-editorblocktype="Divider" style="margin: 20px 0px; padding: 0px;">
+                                                                <div class="dividerWrapper" align="center">
+                                                                    <table style="padding: 0px; margin: 0px; width: 100%; border-collapse: collapse;" cellpadding="0" cellspacing="0" class="">
+                                                                        <tbody>
+                                                                            <tr style="padding: 0px;">
+                                                                                <th style="margin: 0px; padding: 0px; vertical-align: top; border-top: 1px solid rgb(255, 183, 27);">
+                                                                                    <p style="margin: 0px; padding: 0px; line-height: 0px; width: 100%;">
+                                                                                        <span><!--[if gte mso 9]><br/><![endif]-->&nbsp;</span>
+                                                                                    </p>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div data-editorblocktype="Text" style="margin: 0px;">
+                                                                <p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 1.5; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="color: rgb(68, 68, 68); font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;">Hola</span><span style="color: rgb(68, 68, 68); font-size: 14px; font-family: Verdana, Arial, sans-serif;"> </span><span style="font-family: Verdana, Arial, sans-serif; color: rgb(68, 68, 68); font-size: 14px;">👋</span><o:p></o:p></p><p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 1.5; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="color: rgb(68, 68, 68); font-size: 14px; font-family: Verdana, Arial, sans-serif;">En Duoc UC nos cuidamos entre todos. Sabemos que muchas veces tú o tus compañeros pueden estar pasando por momentos difíciles. Por eso, queremos invitarte a ser parte del proyecto <b>Embajadores del Bienestar y la Salud Mental</b>, una iniciativa que busca construir una comunidad más empática, informada y consciente.</span><o:p></o:p></p><p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 1.5; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="color: rgb(68, 68, 68); font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;">¿De qué se trata?​</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;">​</span><span style="font-family: Verdana, Arial, sans-serif; font-weight: bold;">​</span><span style="font-weight: bold;">​</span>​<br>​<span style="font-weight: bold;">​</span><span style="font-family: Verdana, Arial, sans-serif; font-weight: bold;">​</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;">​</span><span style="color: rgb(68, 68, 68); font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;">​</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif;">Es un curso de</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;"> </span><span style="text-align: justify; font-size: 14px; font-family: Verdana, Arial, sans-serif;"><b style="color: rgb(0, 0, 0); font-family: Aptos, sans-serif; font-size: 12pt; text-align: left;">4 módulos online</b></span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;"> d</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif;">onde aprenderás a reconocer señales de alerta, ofrecer contención básica, saber a quién derivar y, sobre todo,</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;"> </span><span style="text-align: justify; font-size: 14px; font-family: Verdana, Arial, sans-serif;"><b style="color: rgb(0, 0, 0); font-family: Aptos, sans-serif; font-size: 12pt; text-align: left;">promover el bienestar</b></span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;"> </span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif;">en tu entorno. Porque en Duoc UC</span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold;"> </span><span style="text-align: justify; font-size: 14px; font-family: Verdana, Arial, sans-serif; color: rgb(68, 68, 68);"><b style="color: rgb(0, 0, 0); font-family: Aptos, sans-serif; font-size: 12pt; text-align: left;">somos personas cuidando personas</b></span><span style="font-size: 14px; font-family: Verdana, Arial, sans-serif; font-weight: bold; color: rgb(68, 68, 68);">.</span>​<br>​</p>
+                                                            </div>
+                                                            
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section" style="background-color: rgb(255, 255, 255); margin: 0px; border-radius: 0px;">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th style="padding: 0px 40px 40px; background-color: rgb(255, 255, 255); border-color: rgb(51, 51, 51); border-width: 0px; border-style: none; border-radius: 0px;" role="presentation">
+                            <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer" data-container-width="100.00" style="vertical-align: top; min-width: 5px; width: 520px; height: 0px; padding: 0px;" id="container7cd95b5ab54ef1683560569764" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner" style="min-width: 5px; padding: 20px 25px; vertical-align: baseline;  word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word; border-color: rgb(51, 51, 51); border-width: 0px; border-style: none; border-radius: 0px; background-color: rgb(244, 244, 244); font-weight: normal;" role="presentation">
+
+                                                            <div data-editorblocktype="Text" style="margin: 0px;">
+                                                                <p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 18.4px; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="font-family: &quot;Segoe UI Emoji&quot;, sans-serif;">👉</span>&nbsp;<i>​<a href="https://www.youtube.com/watch?v=ht7xS-bcBHU" data-msdyn-tracking-id="4311984c2c3ad1745340319980">[<span style="font-weight: bold;">Ver video del Rector] </span></a>​</i>​​<i><o:p></o:p></i></p><p style="text-align: justify;"><span style="color: rgb(0, 0, 0); font-size: 12pt; text-align: left; font-family: &quot;Segoe UI Emoji&quot;, sans-serif;">👉</span><span style="color: rgb(0, 0, 0); font-family: Aptos, sans-serif; font-size: 12pt; text-align: left;"> </span><i style="color: rgb(0, 0, 0); font-family: Aptos, sans-serif; font-size: 12pt; text-align: left;">​<a href="https://embajadores.duoc.cl/" data-msdyn-tracking-id="8cbb9f6b2d8b481745340383011">[<span style="font-weight: bold;">Inscríbete en el curso aquí] </span></a>​</i>​</p>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section" style="background-color: rgb(255, 255, 255);">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th style="padding-right: 40px; padding-bottom: 10px; padding-left: 40px; background-color: rgb(255, 255, 255);" role="presentation">
+                            <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer multi" cellpadding="0" cellspacing="0" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer" data-container-width="100.00" style="vertical-align: top; min-width: 5px; width: 520px; height: 0px;" id="container4aa49a60bf29c1686663803028" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner" style="min-width: 5px; padding: 10px; vertical-align: baseline;  word-wrap: break-word; word-break: break-word; font-weight: normal;" role="presentation">
+
+                                                            <div data-editorblocktype="Text" style="margin: 0px;">
+                                                                <p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 1.5; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="font-family: &quot;Segoe UI Emoji&quot;, sans-serif;">🎧</span>&nbsp;<span style="color: rgb(68, 68, 68); font-family: Verdana, Arial, sans-serif; font-size: 14px;">Además, te invitamos a escuchar nuestro <b>Podcast de Salud Mental</b>, con reflexiones, experiencias y consejos prácticos para el día a día. ​</span><span style="font-size: 14px;">​</span><span style="font-family: Verdana, Arial, sans-serif; font-size: 14px;">​</span><span style="color: rgb(68, 68, 68); font-family: Verdana, Arial, sans-serif; font-size: 14px;">​</span><span style="font-family: Verdana, Arial, sans-serif; font-size: 14px;">​</span><span style="font-size: 14px;">​</span>​<o:p></o:p></p>
+                                                            </div><div data-editorblocktype="Button" align="center" style="margin: 10px 0px;" class="buttonWrapper">​<a class="buttonClass" href="https://open.spotify.com/show/2wldxZ7L8cgJdyHnk6C73F?si=48176de046ff4f72​" style="text-align: center; margin-right: auto; margin-left: auto; display: table-cell; text-decoration: none; background-color: rgb(255, 183, 27); color: rgb(255, 255, 255); width: 215px; height: 25px; padding: 10px 20px; max-width: 100%; line-height: normal; border-color: rgb(255, 255, 255); border-width: 1px; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 0px; border-style: none;mso-hide: none !important;" data-msdyn-tracking-id="bb3ccfdfa4af51683636160707"><span style="font-family: Arial, Verdana, sans-serif; display: inline-block; min-width: 1px; text-decoration: none;">​​​​¡Escúchalo y compártelo! ​</span></a>​</div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section" style="background-color: rgb(255, 255, 255); margin: 0px; border-radius: 0px;">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th style="padding: 0px 40px 40px; background-color: rgb(255, 255, 255); border-color: rgb(51, 51, 51); border-width: 0px; border-style: none; border-radius: 0px;" role="presentation">
+                            <table style="width: 100%;
+                border-collapse: collapse;" class="containerWrapper tbContainer multi" cellpadding="0" cellspacing="0" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer" data-container-width="100.00" style="vertical-align: top; min-width: 5px; width: 520px; height: 0px;" id="container163d679b87cda81686663803028" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner" style="min-width: 5px; padding: 10px; vertical-align: baseline;  word-wrap: break-word; word-break: break-word; font-weight: normal;" role="presentation">
+
+                                                            <div data-editorblocktype="Text" style="margin: 0px;">
+                                                                <p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 1.5; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="font-family: Verdana, Arial, sans-serif; font-size: 14px; color: rgb(68, 68, 68);"><b>¿Te animas a sumarte?</b>​</span><span style="font-size: 14px; color: rgb(68, 68, 68);">​</span><span style="color: rgb(68, 68, 68);">​</span>​<br>​<span style="color: rgb(68, 68, 68);">​</span><span style="font-size: 14px; color: rgb(68, 68, 68);">​</span><span style="font-family: Verdana, Arial, sans-serif; font-size: 14px; color: rgb(68, 68, 68);">​Tu rol puede hacer la diferencia en la vida de alguien más.</span><o:p></o:p></p><p class="MsoNormal" style="margin: 0cm 0cm 8pt; line-height: 1.5; font-size: 12pt; font-family: Aptos, sans-serif; color: rgb(0, 0, 0);"><span style="font-family: Verdana, Arial, sans-serif; font-size: 14px; color: rgb(68, 68, 68);"><b>​<br>​Duoc UC</b>​</span><span style="font-size: 14px; color: rgb(68, 68, 68);">​</span><span style="color: rgb(68, 68, 68);">​</span>​<br>​<span style="color: rgb(68, 68, 68);">​</span><span style="font-size: 14px; color: rgb(68, 68, 68);">​</span><span style="font-family: Verdana, Arial, sans-serif; font-size: 14px; color: rgb(68, 68, 68);">​</span><span style="color: rgb(68, 68, 68); font-size: 14px; font-family: Verdana, Arial, sans-serif;">Dirección de Desarrollo Estudiantil</span><span style="text-align: justify; font-family: Verdana, Arial, sans-serif; font-size: 14px; color: rgb(68, 68, 68);">​                                                                &nbsp;</span></p>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+	
+	
+	
+        <div data-section="true" class="emptyContainer columns-equal-class wrap-section" style="background-color: rgb(255, 255, 255);">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;" width="100%">
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <table align="center" bgcolor="#1b1b1b" border="0" cellpadding="0" cellspacing="0" class="row" style="width:600px;max-width:600px;" width="600">
+          <tbody>
+            <tr>
+              <td align="center" bgcolor="#1b1b1b" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="row" style="width:100%;max-width:100%;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="top">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" style="max-width: 500px;" width="500">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="table-full" width="287">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="font-family: 'Open sans', Arial, sans-serif; color:#6E6E6E; letter-spacing:1px; font-size:14px; font-weight:normal;padding-left:15px;padding-right:15px;border-bottom:3px solid #ffbf00;">&nbsp;</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="table-full" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="font-family: 'Open sans', Arial, sans-serif; color:#6E6E6E; letter-spacing:1px; font-size:14px; font-weight:normal;padding-left:15px;padding-right:15px;border-top:1px solid #ffbf00;">&nbsp;</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" style="max-width: 600px;" width="600">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" style="max-width: 500px;padding-top: 20px" width="550">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-full" width="250">
+                                          <tbody>
+                                            <tr>
+                                              <td align="center">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" width="35px"><a href="https://www.instagram.com/duocuc_cl/"><img src="https://staticcl1.fidelizador.com/duocuc/2020/institucional/campanas-2020/ig_icon_crm.png"></a></td>
+                                                      <td align="right" width="35px"><a href="https://cl.linkedin.com/school/duoc-uc/"><img src="https://staticcl1.fidelizador.com/duocuc/2020/institucional/campanas-2020/in_icon_crm.png"></a></td>
+                                                      <td align="right" width="35px"><a href="https://www.youtube.com/user/DuocUCvideos"><img src="https://staticcl1.fidelizador.com/duocuc/2020/institucional/campanas-2020/yt_icon_crm_bottom.png"></a></td>
+                                                      <td align="right" width="35px"><a href="https://twitter.com/DuocUC"><img src="https://assets-sam.mkt.dynamics.com/bd1f2d8e-014c-4485-b5d2-b7ab4a4ef390/digitalassets/images/410c8bb1-366c-ee11-8179-002248e0d6a7?ts=638330660736998288"></a></td>
+                                                      <td align="right" width="35px"><a href="https://www.facebook.com/DuocUC/"><img src="https://staticcl1.fidelizador.com/duocuc/2020/institucional/campanas-2020/fb_icon_crm.png"></a></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="20">&nbsp;</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                 <table align="center" border="0" cellpadding="0" cellspacing="0" class="row" style="width:530px;max-width:530px;" width="530">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" height="10" style="font-size:10px;line-height:10px;" valign="top">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" style="font-size:0;padding:0" valign="top">
+                                        <div class="row" style="display:inline-block;max-width:500;vertical-align:top;width:500">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="row" width="500">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" style="padding:0;padding-bottom:20px" valign="middle" width="500"><a href="https://www.duoc.cl/" style="text-decoration:none;border:0"><img border="0" src="https://www.duoc.cl/wp-content/uploads/2024/10/logo-acreditacion-mail-nuevo.png" style="display:block;border:0; width: 500px;" width="500"></a></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" height="20" valign="top">&nbsp;</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+								  
+								  
+								 <table align="center" border="0" cellpadding="0" cellspacing="0" class="row" style="width:530px;max-width:530px;" width="530">
+                                  <tbody>
+                                   
+                                    <tr>
+                                      <td align="center" style="font-size:0;padding:0" valign="top">
+                                        <div class="row" style="display:inline-block;max-width:220px;vertical-align:top;width:100%">
+                                          <table align="right" border="0" cellpadding="0" cellspacing="0" class="row" width="220">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" style="padding:0;padding-bottom:20px" valign="middle" width="220"><a href="https://www.duoc.cl/" style="text-decoration:none;border:0"><img border="0" src="https://staticcl1.fidelizador.com/duocuc/2020/julio/semana-1/logo_duoc.png" style="display:block;border:0; width: 220px;" width="220"></a></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" height="30" style="font-size:30px;line-height:30px;" valign="top">&nbsp;</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+								  
+								  
+								  
+								  
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+
+
+
+
+        <div data-section="true" class="columns-equal-class wrap-section">
+            <table class="outer" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 600px; display: block;" role="presentation">
+                <tbody>
+                    <tr>
+                        <th style="border-radius: 0px;" role="presentation">
+                            <table style="display: block; width: 100%; border-collapse: collapse;" class="containerWrapper tbContainer" cellpadding="0" cellspacing="0" bgcolor="#252525" role="presentation">
+                                <tbody>
+                                    <tr>
+                                        <th data-container="true" class="columnContainer hidden" data-container-width="100" style="min-width: 5px; width: 600px; height: 0px;" id="containerf6ee421d276ce1645032575152" role="presentation">
+                                            <table width="100%" cellpadding="0" cellspacing="0" style="height: 100%;" role="presentation">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="inner ui-sortable" style="min-width: 5px; padding: 10px; vertical-align: top;  word-wrap: break-word; word-break: break-word; font-weight: normal;" role="presentation">
+                                                            <div data-editorblocktype="Text" style="margin: 10px;">
+                                                                <p style="text-align: center;">
+                                                                    <span style="color:#605e5c; :; font-family:Arial,Verdana,Geneva,sans-serif; font-size:11px">© 2023 Microsoft Dynamics. Todos los derechos reservados.</span>
+                                                                </p>
+                                                                <p style="text-align: center;">
+                                                                    <span style="color:#605e5c; font-size: 11px;"><font face="Arial, Verdana, Geneva, sans-serif">{{msdyncrm_contentsettings.msdyncrm_addressmain}}
+                                                                   &nbsp;</font></span>
+                                                                </p>
+                                                                <p style="text-align: center;">​<a href="{{msdyncrm_contentsettings.msdyncrm_subscriptioncenter}}"><span style="color:#1f6cf9;"><font face="Arial, Verdana, Geneva, sans-serif"><span style="font-size: 11px;">Cancelar suscripción</span>
+                                                                        </font></span></a>​</p>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div></body></html>
